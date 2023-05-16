@@ -9,7 +9,7 @@ const Header = () => {
     const handleLogout = () => {
         logOut()
             .then(() => {
-
+                localStorage.removeItem('car-doctor-token')
             })
             .then(error => {
                 console.log(error)
